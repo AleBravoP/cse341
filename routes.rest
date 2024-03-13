@@ -1,0 +1,51 @@
+@baseUrl = http://localhost:3000/users
+
+### Get all users
+GET {{baseUrl}}
+###
+
+### Get user by id
+GET {{baseUrl}}/65e723f81492a6af5919b5b9
+
+### GET {{baseUrl}}/items/:id
+
+### Add user
+POST {{baseUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "emma",
+    "lastName": "flowers",
+    "email": "cello@gmail.io",
+    "favoriteColor": "electric blue",
+    "birthday": "november 11"
+}
+###
+
+### Add user
+POST {{baseUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "andres",
+    "lastName": "carba",
+    "email": "viola@gmail.io",
+    "favoriteColor": "deep jungle green",
+    "birthday": "march 6"
+}
+###
+
+### Update user
+PUT {{baseUrl}}/65e723f81492a6af5919b5b9
+Content-Type: application/json
+
+{
+    "email": "ana.lau@gmail.com",
+    "birthday": "february 16",
+    "favoriteColor": "cerulean frost",
+    "firstName": "ana",
+    "lastName": "perez"
+}
+
+### DELETE Delete user
+DELETE {{baseUrl}}/65f126effd0a8a20bc354291
