@@ -5,7 +5,7 @@ GET {{baseUrl}}
 ###
 
 ### Get user by id
-GET {{baseUrl}}/65e723f81492a6af5919b5b9
+GET {{baseUrl}}/65e7241a1492a6af5919b5ba
 
 ### GET {{baseUrl}}/items/:id
 
@@ -36,15 +36,15 @@ Content-Type: application/json
 ###
 
 ### Update user
-PUT {{baseUrl}}/65e723f81492a6af5919b5b9
+PUT {{baseUrl}}/65e7241a1492a6af5919b5ba
 Content-Type: application/json
 
 {
-    "email": "ana.lau@gmail.com",
-    "birthday": "february 16",
-    "favoriteColor": "cerulean frost",
-    "firstName": "ana",
-    "lastName": "perez"
+    "email": "lom@gmail.com",
+    "birthday": "august 26",
+    "favoriteColor": "purple",
+    "firstName": "kenia",
+    "lastName": "bernal"
 }
 
 ### DELETE Delete user
